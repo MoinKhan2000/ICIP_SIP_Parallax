@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.title {
+    width: 100%;
+    margin: auto;
+    font-size: 6rem;
+    color: white;
+    text-shadow: 0 0 5px black;
+    text-align: center;
+}
+
+section {
+    font-size: 2rem;
+    /* padding: 2rem; */
+    background-color: #333;
+    color: white;
+    text-align: justify;
+}
+
+.wrapper {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 100px;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.background,
+.foreground {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 2;
+}
+.background{
+    transform: translateZ(-100px) scale(2);
+}
+.foreground{
+    transform: translateZ(-5px) scale(1.5);
+    z-index: 21;
+}
+
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+h1,
+p {
+    margin: auto;
+    max-width: 50%;
+    text-align: ceter;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 0px 100px black;
+}
+
+.box {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.box1 {
+    background: url('https://wallpapershome.com/images/pages/pic_h/17125.jpg') center center/cover no-repeat;
+    background-attachment: fixed;
+
+}
+
+.box2 {
+    background: url('https://wallpaperaccess.com/full/1723475.jpg') center center/cover no-repeat;
+    background-attachment: fixed;
+
+}
+
+.box3 {
+    background: url('https://wallpapercave.com/wp/wp3275497.jpg') center center/cover no-repeat;
+    background-attachment: fixed;
+
+}
